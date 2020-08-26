@@ -5,10 +5,6 @@
   "author": "",
   "license": "MIT",
   "type": "module",
-  "bin": {
-    "reactive-json": "./dist/cli.cjs",
-    "reactive-json-dev": "./exports/cli.js"
-  },
   "main": "./dist/node.cjs",
   "exports": {
     "import": "./dist/node.mjs",
