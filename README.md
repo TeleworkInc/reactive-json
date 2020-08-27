@@ -1,4 +1,20 @@
 # reactive-json
+Easily mutate JSON files via:
+
+```javascript
+import { ReactiveJSON } from 'reactive-json';
+new ReactiveJSON({
+  file: 'test.js'
+}).mutate(
+  (obj) => {
+    console.log('original value is: ', obj.test);
+    obj.test = 42; // modify
+  }
+);
+```
+
+The `mutate` method will automatically write the modified object back to the
+specified `file`. 
 
 ### Welcome to my [gnv project](https://github.com/TeleworkInc/gnv)!
 
