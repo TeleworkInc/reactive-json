@@ -1,6 +1,6 @@
 {
   "name": "reactive-json",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "",
   "author": "",
   "license": "MIT",
@@ -52,11 +52,11 @@
     "google-closure-library": "20200719.0.0",
     "mocha": "8.0.1",
     "rollup": "2.21.0",
+    "rollup-plugin-bundle-size": "latest",
     "rollup-plugin-disable-packages": "3.0.0",
     "rollup-plugin-export-default": "1.4.0",
-    "rollup-plugin-preserve-shebang": "1.0.1",
-    "rollup-plugin-bundle-size": "latest",
-    "rollup-plugin-import-meta-url": "5.0.0"
+    "rollup-plugin-import-meta-url": "5.0.0",
+    "rollup-plugin-preserve-shebang": "1.0.1"
   },
   "dependencies": {}
 }
