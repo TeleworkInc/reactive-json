@@ -14,7 +14,8 @@ new ReactiveJSON({
 ```
 
 The `mutate` method will automatically write the modified object back to the
-specified `file`. 
+specified `file`.  Use `const { ReactiveJSON } = require('reactive-json')` for
+CJS.
 
 ### Welcome to my [gnv project](https://github.com/TeleworkInc/gnv)!
 
