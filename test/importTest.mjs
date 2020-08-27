@@ -17,14 +17,14 @@ import * as distNode from '../dist/node.mjs';
 
 describe('ESM import', () => {
   it('should import this package', () => {
-    expect(thisPackage.sayHello).to.be.a('function');
+    expect(thisPackage.ReactiveJSON).to.be.a('function');
   });
 
   it('should import the uncompiled module [dev/node.mjs]', () => {
-    expect(devNode.sayHello).to.be.a('function');
+    expect(devNode.ReactiveJSON).to.be.a('function');
   });
 
   it('should import the compiled module [dist/node.mjs]', () => {
-    expect(distNode.sayHello).to.be.a('function');
+    expect(distNode.ReactiveJSON).to.be.a('function');
   });
 });

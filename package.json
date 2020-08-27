@@ -22,7 +22,7 @@
     "build:exe": "node .gnv/npm/buildExe.js",
     "postbuild": "npm run test",
     "minify:dist": "rollup -c .gnv/rollup.dist.minify.js",
-    "format-clis": "sed -i '1i #!/usr/bin/env node' dist/cli.* && (chmod -f +x exports/cli.* dev/cli.* dist/cli.* || true)",
+    "format-clis": "if [ -f dist/cli.* ]; then sed -i '1i #!/usr/bin/env node' dist/cli.* && (chmod -f +x exports/cli.* dev/cli.* dist/cli.* || true); fi",
     "clean": "rm -rf dist/* && rm -rf dev/*",
     "test": "mocha"
   },

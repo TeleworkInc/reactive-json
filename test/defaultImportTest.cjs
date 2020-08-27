@@ -9,7 +9,7 @@
 require('chai/register-expect');
 
 const devNode = require('../dev/node.cjs');
-const { sayHello } = require('../dev/node.cjs');
+const { ReactiveJSON } = require('../dev/node.cjs');
 
 describe('Default CJS import from [dev/node.cjs]', () => {
   it('should be non-null', () => {
@@ -19,6 +19,6 @@ describe('Default CJS import from [dev/node.cjs]', () => {
 
 describe('Named CJS import from [dev/node.cjs]', () => {
   it('should be non-null', () => {
-    expect(sayHello).to.not.be.undefined;
+    expect(ReactiveJSON).to.not.be.undefined;
   });
 });

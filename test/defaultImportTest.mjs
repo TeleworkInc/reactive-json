@@ -8,7 +8,7 @@
 
 import 'chai/register-expect.js';
 import devNode from '../dev/node.mjs';
-import { sayHello } from '../dev/node.mjs';
+import { ReactiveJSON } from '../dev/node.mjs';
 
 describe('Default ESM import from [dev/node.mjs]', () => {
   it('should be non-null', () => {
@@ -18,6 +18,6 @@ describe('Default ESM import from [dev/node.mjs]', () => {
 
 describe('Named ESM import from [dev/node.mjs]', () => {
   it('should be non-null', () => {
-    expect(sayHello).to.not.be.undefined;
+    expect(ReactiveJSON).to.not.be.undefined;
   });
 });

@@ -11,6 +11,6 @@ import * as node from '../exports/node.js';
 
 describe('Importing exports from source', () => {
   it('should not fail for [exports/node.js]', () => {
-    expect(node.sayHello).to.be.a('function');
+    expect(node).to.be.a('module');
   });
 });
